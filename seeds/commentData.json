@@ -1,0 +1,17 @@
+[
+    {
+        "post_id": 1,
+        "user_id":2,
+        "content": "Learning MVC has really helped me understand code structure!"
+    },
+    {
+        "post_id": 2,
+        "user_id":2,
+        "content": "Yeah the ORM connects object oriented programming to relational databases."
+    },
+    {
+        "post_id": 3,
+        "user_id":4,
+        "content": "Recognizing the difference between these two has really saved me some headaches"
+    }
+]

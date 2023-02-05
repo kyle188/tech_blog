@@ -1,0 +1,114 @@
+:root {
+
+    --darkpurple: #2b193d;
+    --spacecadet: #2c365e;
+    --independence: #484d6d;
+    --wintergreen: #4b8f8c;
+    --tuscany: #c5979d;
+    --sunburst: #A68D56;
+    --cafenoir: #58432C;
+    --alabaster: #EDEADF;
+    --olivedrab: #483E2C;
+    --goldfusion: #787350;
+    --darkgreen: #455b55;
+
+
+}
+
+#posts{
+    background-color: var(--darkgreen);
+    padding: 10px;
+    border: #2b193d;
+    border-radius:5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+}
+#comments{
+    background-color: var(--tuscany);
+}
+#commentDrop{
+  padding: 15px;
+  margin-top: 15px;
+  background-color: (--alabaster);
+}
+#commentBox{
+  background-color: var(--cafenoir);
+  padding: 10px;
+  color: var(--alabaster);
+  border-radius: 5px;
+}
+
+.postcard {
+  justify-content: center;
+}
+
+.navbar-custom {
+  display: flex;
+  background-color: var(--darkgreen);
+  z-index: 12;
+  justify-content: center;
+}
+
+a.navbar-brand {
+  font-size: 40px;
+}
+
+.title {
+  font-size: 100px;
+}
+
+.modal-backdrop {
+    z-index: -1;
+  }
+
+.modal .modal-content {
+    z-index: 14;
+  background-color: var(--goldfusion);
+}
+
+.btn {
+  background-color: var(--darkgreen);
+}
+
+#navDiv{
+    justify-content: left;
+}
+.nav-link{
+    padding: 10px;
+}
+.modal-footer{
+    text-align: center;
+}
+
+main{
+    z-index: 10;
+    position: relative;
+   padding: 50px;
+}
+
+#postBtn{
+    z-index: 13;
+}
+
+div p {
+    color: antiquewhite;
+    text-align: center;
+}
+div a {
+    color: goldenrod;
+}
+div h2 {
+    text-align: center;
+    padding: 10px;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    padding:40px
+}
+ a:hover{
+    text-decoration:underline;
+ }
+
+.comments  {
+  color: black;
+}
