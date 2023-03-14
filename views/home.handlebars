@@ -5,12 +5,12 @@
 
 
 <center>
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-        + New Post
+    <button type="button" class="btn btn-primary" id="newPostBtn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Create New Post
     </button>
 
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">Create New Post</h5>
@@ -55,7 +55,7 @@
 
                 {{#if comments.length}}
                 <div>
-                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                    <button class="btn btn-primary" id="commentsBtn" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
                         <p>Comments: {{commentCount}}</p>
                     </button>
@@ -74,11 +74,11 @@
                 <form class="commentForm" data-id="{{post.id}}">
                     <textarea class="commentInput" rows="3"></textarea>
                     <br>
-                    <button class="commentBtn btn btn-primary">Leave a Comment</button>
+                    <button class="commentBtn btn btn-primary" id="leaveCommentBtn">Leave a Comment</button>
                 </form>
                 {{#if belongsToUser}}
 
-                <button class="btn btn-sm btn-danger" data-id="{{post.id}}">Delete Your Post</button>
+                <button class="btn btn-sm btn-danger" id="deleteBtn" data-id="{{post.id}}">Delete Your Post</button>
 
                 {{/if}}
             </div>

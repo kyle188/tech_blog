@@ -1,39 +1,61 @@
 :root {
 
-    --darkpurple: #2b193d;
-    --spacecadet: #2c365e;
-    --independence: #484d6d;
-    --wintergreen: #4b8f8c;
-    --tuscany: #c5979d;
-    --sunburst: #A68D56;
-    --cafenoir: #58432C;
-    --alabaster: #EDEADF;
+    --persianGreen: #2D9F8E;
+    --alabaster: #F7F5CA;
     --olivedrab: #483E2C;
     --goldfusion: #787350;
-    --darkgreen: #455b55;
+    --brunswickGreen: #124039;
+    --lapisLazuli: #7BC8F4;
+    --prussianBlue: #182639;
+    --celeste: #AFFDEE;
+    --beige: #F7F9DD;
+    --cadetGray: #91AEC1;
+    --jasper: #D45235;
 
 
+}
+
+#welcome{
+  font-size: 50px;
+  border-style: double;
+  background: var(--prussianBlue);
+}
+
+h1{
+  font-size: 50px;
+}
+
+h4{
+  font-size: 40px;  
+  color: var(--celeste);
 }
 
 #posts{
-    background-color: var(--darkgreen);
+    background-color: var(--prussianBlue);
     padding: 10px;
-    border: #2b193d;
     border-radius:5px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+    border-style: double;
+    border-color: var(--brunswickGreen);
 }
-#comments{
-    background-color: var(--tuscany);
+
+.comments  {
+  color: black;
 }
+
+.commentInput{
+  background-color: var(--beige);
+}
+
 #commentDrop{
   padding: 15px;
   margin-top: 15px;
-  background-color: (--alabaster);
+  background-color: var(--alabaster);
 }
+
 #commentBox{
-  background-color: var(--cafenoir);
+  background-color: var(--prussianBlue);
   padding: 10px;
-  color: var(--alabaster);
+  color: var(--beige);
   border-radius: 5px;
 }
 
@@ -43,13 +65,14 @@
 
 .navbar-custom {
   display: flex;
-  background-color: var(--darkgreen);
+  background-color: var(--brunswickGreen);
   z-index: 12;
   justify-content: center;
 }
 
 a.navbar-brand {
   font-size: 40px;
+  color: var(--alabaster);
 }
 
 .title {
@@ -61,16 +84,53 @@ a.navbar-brand {
   }
 
 .modal .modal-content {
-    z-index: 14;
-  background-color: var(--goldfusion);
+  z-index: 14;
+  background-color: var(--prussianBlue);
+  border-style: solid;
+  border-color: var(--lapisLazuli);
 }
 
 .btn {
-  background-color: var(--darkgreen);
+  background-color: var(--cadetGray);
+  border-color: var(--brunswickGreen);
+  margin-top: 10px;
+  color: var(--prussianBlue);
+  font-weight: 750;
+}
+
+.btn:hover {
+  background-color: var(--cadetGray);
+  color: var(--alabaster);
+  border-color: var(--alabaster);
+}
+
+#newPostBtn {
+  color: var(--prussianBlue);
+  font-weight: 750;
+  border-style: groove;
+  border-color: var(--brunswickGreen);
+  border-width: 10px;
+}
+
+#newPostBtn:hover {
+  background-color: var(--alabaster);
+}
+
+/* #leaveCommentBtn:hover {
+  background-color: var(--cadetGray);
+  color: var(--alabaster);
+  border-color: var(--alabaster);
+} */
+
+#deleteBtn{
+  border-color: var(--brunswickGreen);
+  background-color: var(--jasper);
+  margin-top: 20px;
 }
 
 #navDiv{
     justify-content: left;
+    color: var(--alabaster);
 }
 .nav-link{
     padding: 10px;
@@ -82,11 +142,15 @@ a.navbar-brand {
 main{
     z-index: 10;
     position: relative;
-   padding: 50px;
+    padding: 50px;
 }
 
 #postBtn{
     z-index: 13;
+}
+
+#titleInput, #descriptionInput {
+    background-color: var(--alabaster);
 }
 
 div p {
@@ -94,7 +158,7 @@ div p {
     text-align: center;
 }
 div a {
-    color: goldenrod;
+    color: var(--celeste);
 }
 div h2 {
     text-align: center;
@@ -109,6 +173,11 @@ nav a{
     text-decoration:underline;
  }
 
-.comments  {
-  color: black;
+body {
+  background-image: url(https://images.unsplash.com/photo-1562575214-da9fcf59b907?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTM1fHx0ZWNobm9sb2d5fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
+  background-size: cover;
+}
+
+.container{
+  color: var(--alabaster);
 }
